@@ -31,7 +31,6 @@
             text-align: center;
         }
 
-        /* Default to user's theme preference */
         @media (prefers-color-scheme: light) {
             body {
                 background-color: var(--bg-light);
@@ -68,6 +67,7 @@
     <div class="container">
         <h1>MLICFRFR License</h1>
         <p>You can’t copy whatever shitty thing Lock came up with and use it for your own stuff or really at all unless you’re referring directly to Lock’s thing.</p>
+        <button class="toggle-btn" onclick="toggleMode()">Toggle Dark/Light Mode</button>
     </div>
 
     <script>
@@ -82,7 +82,6 @@
             }
         }
 
-        // Set initial theme based on user preference
         document.addEventListener('DOMContentLoaded', () => {
             if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
                 document.body.classList.add('dark-mode');
