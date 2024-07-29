@@ -44,51 +44,13 @@
                 color: var(--text-dark);
             }
         }
-
-        .toggle-btn {
-            display: block;
-            margin: 20px auto;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border: none;
-            border-radius: 5px;
-            background-color: #007bff;
-            color: #ffffff;
-            transition: background-color 0.3s;
-        }
-
-        .toggle-btn:hover {
-            background-color: #0056b3;
-        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>MLICFRFR License</h1>
         <p>You can’t copy whatever shitty thing Lock came up with and use it for your own stuff or really at all unless you’re referring directly to Lock’s thing.</p>
-        <button class="toggle-btn" onclick="toggleMode()">Toggle Dark/Light Mode</button>
     </div>
-
-    <script>
-        function toggleMode() {
-            const body = document.body;
-            if (body.classList.contains('light-mode')) {
-                body.classList.remove('light-mode');
-                body.classList.add('dark-mode');
-            } else {
-                body.classList.remove('dark-mode');
-                body.classList.add('light-mode');
-            }
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                document.body.classList.add('dark-mode');
-            } else {
-                document.body.classList.add('light-mode');
-            }
-        });
-    </script>
 </body>
 </html>
+
